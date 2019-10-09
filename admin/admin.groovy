@@ -1,5 +1,6 @@
-Binding binding = new Binding();
-freeStyleJob('binding.getVariable​(jobfolder)/kibo-admin-dsl-test') {
+import groovy.transform.BaseScript
+@BaseScript ./folder/folder.groovy mainScript
+freeStyleJob('${Folder_name}/kibo-admin-dsl-test') {
     description('testing job dsl on kibo-admin')  
     label('mac-slave')
     logRotator {
