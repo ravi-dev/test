@@ -1,5 +1,5 @@
 Binding binding = new Binding();
-freeStyleJob('DSL-JOBS/kibo-admin-dsl-test') {
+freeStyleJob('binding.getVariable​(jobfolder)/kibo-admin-dsl-test') {
     description('testing job dsl on kibo-admin')  
     label('mac-slave')
     logRotator {
