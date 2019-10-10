@@ -1,7 +1,6 @@
-abstract class MainScript extends Script {
-    def Folder_name = 'test'
-    folder('${Folder_name}') {
-    displayName('${Folder_name}')
-    description('test project')
-}
+Binding binding = new Binding();
+    binding.setVariable("jobfolder", "DSL-JOBS");
+// jobfolder="DSL-JOBS"
+folder('jobfolder') {
+    displayName('jobfolder')
 }
