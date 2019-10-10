@@ -1,12 +1,20 @@
-import groovy.transform.BaseScript
-@BaseScript ./folder/folder.groovy mainScript
-freeStyleJob('${Folder_name}/kibo-admin-dsl-test') {
+// folder('DSL-JOBS') {
+//     displayName('DSL-JOBS')
+// }
+Binding binding = new Binding();
+//freeStyleJob('binding.variables.get('jobfolder')/kibo-admin') {
+freeStyleJob('binding.getVariable​(jobfolder)/kibo-admin') {
+//freeStyleJob('DSL-JOBS/kibo-admin') {
     description('testing job dsl on kibo-admin')  
-    label('mac-slave')
+    
+    //Left to enable at any point of time
+    //label('Jenkins-EC2-Slave')
+
     logRotator {
-	    artifactNumToKeep(3)
+	    numToKeep(3)
 	    daysToKeep(3)
 	    }
+
     scm {
         git {
             remote {
@@ -16,23 +24,37 @@ freeStyleJob('${Folder_name}/kibo-admin-dsl-test') {
             branch('master')
         }
     }
-    triggers {
-        githubPush()
-    }
+    
+    // triggers {
+    //     githubPush()
+    // }
+
     wrappers {
         preBuildCleanup()
+        credentialsBinding {
+        usernamePassword {
+        // Name of an environment variable to be set to the username during the build.
+        usernameVariable('GIT_USRNAME')
+        // Name of an environment variable to be set to the password during the build.
+        passwordVariable('GIT_PASWD')
+        // Credentials of an appropriate type to be set to the variable.
+        credentialsId('bkona-alopa')
+        }
+    }
     }
     steps {
-        shell('docker build -t kibo-admin:latest .')
+        shell('docker build --build-arg gitusername=${GIT_USRNAME}  --build-arg gitpassword=${GIT_PASWD} -t kibo-admin:latest .')
         shell('docker save --output kibo-admin.tar kibo-admin:latest')
     }
     publishers {
-        archiveArtifacts("*.tar")
+        archiveArtifacts("kibo-admin.tar")
         extendedEmail {
             recipientList('bks@amalgarx.com')
+            replyToList('bks@amalgamrx.com')
             defaultSubject("\${DEFAULT_SUBJECT}")
             defaultContent("\${DEFAULT_CONTENT}")
             contentType('text/html')
+            attachBuildLog(false)
             triggers {
                 always {
                     sendTo {
@@ -43,6 +65,11 @@ freeStyleJob('${Folder_name}/kibo-admin-dsl-test') {
         }
     }
     properties{
+        copyArtifactPermission {
+            // Comma-separated list of projects that can copy artifacts of this project.
+            projectNames('kibo-deployer')
+        }
+
 		promotions{
 			promotion {
                 name('Deploy_to_DEV')
