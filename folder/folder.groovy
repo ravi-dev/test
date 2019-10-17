@@ -1,5 +1,5 @@
 // kibo-admin
-freeStyleJob("${FolderNAme}/kibo-admin") {        
+freeStyleJob("${FolderName}/kibo-admin") {        
     label('Jenkins-EC2-Slave')
     logRotator {
 	    numToKeep(3)
