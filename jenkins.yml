@@ -3,8 +3,41 @@ jenkins:
   - "JNLP4-connect"
   - "Ping"
   authorizationStrategy:
-    loggedInUsersCanDoAnything:
-      allowAnonymousRead: false
+    globalMatrix:
+      permissions:
+      - "Agent/Build:balamani"
+      - "Agent/Configure:balamani"
+      - "Agent/Connect:balamani"
+      - "Agent/Create:balamani"
+      - "Agent/Delete:balamani"
+      - "Agent/Disconnect:balamani"
+      - "Credentials/Create:balamani"
+      - "Credentials/Delete:balamani"
+      - "Credentials/ManageDomains:balamani"
+      - "Credentials/Update:balamani"
+      - "Credentials/View:balamani"
+      - "Job/Build:balamani"
+      - "Job/Cancel:balamani"
+      - "Job/Configure:balamani"
+      - "Job/Create:balamani"
+      - "Job/Delete:balamani"
+      - "Job/Discover:balamani"
+      - "Job/Move:balamani"
+      - "Job/Read:balamani"
+      - "Job/Workspace:balamani"
+      - "Lockable Resources/Reserve:balamani"
+      - "Lockable Resources/Unlock:balamani"
+      - "Lockable Resources/View:balamani"
+      - "Overall/Administer:balamani"
+      - "Overall/Read:balamani"
+      - "Run/Delete:balamani"
+      - "Run/Replay:balamani"
+      - "Run/Update:balamani"
+      - "SCM/Tag:balamani"
+      - "View/Configure:balamani"
+      - "View/Create:balamani"
+      - "View/Delete:balamani"
+      - "View/Read:balamani"
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
@@ -23,7 +56,7 @@ jenkins:
   scmCheckoutRetryCount: 0
   securityRealm:
     local:
-      allowsSignup: false
+      allowsSignup: true
       enableCaptcha: false
       users:
       - id: "balamani"
