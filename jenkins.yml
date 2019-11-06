@@ -111,7 +111,6 @@ jenkins:
       - "Agent/Build:vanand@alopasoft.com"
       - "Agent/Configure:bkona@alopasoft.com"
       - "Agent/Configure:rrao@alopasoft.com"
-      - "Agent/Configure:vanand@alopasoft.com"
       - "Agent/Connect:bkona@alopasoft.com"
       - "Agent/Connect:hemanth@alopasoft.com"
       - "Agent/Connect:rrao@alopasoft.com"
