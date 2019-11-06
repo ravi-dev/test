@@ -1,194 +1,17 @@
-credentials:
-  system:
-    domainCredentials:
-    - credentials:
-      - basicSSHUserPrivateKey:
-          description: "mac-slave-creds"
-          id: "0001"
-          privateKeySource:
-            directEntry:
-              privateKey: "{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}"
-          scope: SYSTEM
-          username: "jenkins_kibo"
-      - usernamePassword:
-          description: "bkona-alopa GitHub Creds"
-          id: "bkona-alopa"
-          password: "{AQAAABAAAAAQgqzxv4X50HHxdYOXGYxOn2kd+86z1gZfT2F6NPR5UfM=}"
-          scope: GLOBAL
-          username: "bkona@alopasoft.com"
-      - usernamePassword:
-          description: "encoded GIT Creds"
-          id: "encoded-GIT-Creds"
-          password: "{AQAAABAAAAAQKPTP7q8TNKo7sn8oylCW31KHHnJgcaS+nTcES3GgrvY=}"
-          scope: GLOBAL
-          username: "bkona%2Dalopa"
-      - string:
-          description: "DEV DB Host of KIBO"
-          id: "kibo-DB-Host-DEV"
-          scope: GLOBAL
-          secret: "{AQAAABAAAABAkN7EyzV6wX2qByc+gfwSUlVzTcjXAY1yiYTStDzjHCTa/J+hgnFLaNQL5snnqJByf7B4RoKA42M3r9nJ5+Nqpkmk9J67uQNKjQfJFjKVOKY=}"
-      - string:
-          description: "DEV DB UserName of kibo"
-          id: "kibo-DB-Username-DEV"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQyCBr/eQ0PjJSeZA3b47s3ck+tvGDHeJzgkqI5zPVrvY=}"
-      - string:
-          description: "DEV DB Password of Kibo"
-          id: "kibo-DB-Password-DEV"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQnvp7vVOfu+7iPGqKvet06+q9mDvUifK66Dlb4k+3GKU=}"
-      - string:
-          description: "DEV DB Name of kibo"
-          id: "kibo-DB-Name-DEV"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQPaDSD5Mcz+opUYvB5Hdq9YTmOVjjKit2+MXVSjVyvZU=}"
-      - string:
-          description: "global DB Host of KIBO"
-          id: "kibo-DB-Host-global"
-          scope: GLOBAL
-          secret: "{AQAAABAAAABA/MB7cYdsbQTBsN19MhPSusRVJLizbADDVTG3NUar4D6nqwNjuEkULa8+8uY2ciZddseS5ROJPxBkCdyEsmKreM0rqm6Oz79+Vuqc2Zv42GQ=}"
-      - string:
-          description: "global DB UserName of kibo"
-          id: "kibo-DB-Username-global"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQZINZWdZgsLkwh/8FWcXCKuZSkyKdE5vR2V1ECADVbHg=}"
-      - string:
-          description: "global DB Password of Kibo"
-          id: "kibo-DB-Password-global"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQ/YHP8UpHiu4iwRy59HSd6Hl4cwjUxGHOIyBXbH2cODw=}"
-      - string:
-          description: "global DB Name of kibo"
-          id: "kibo-DB-Name-global"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQQBBitZU0oftzeBGshJ0BHJ+/GO4P4NF1wsJOUdOxeyw=}"
-      - usernamePassword:
-          description: "encoded git creds of bala"
-          id: "bkona-alopa-encoded"
-          password: "{AQAAABAAAAAQUa5K80r2cY11WwBImAgwd2s2o4/MUvGl+KKtDorG92w=}"
-          scope: GLOBAL
-          username: "bkona%2Dalopa"
-      - aws:
-          accessKey: "AKIA2M3SA74CGJMKJS52"
-          description: "The Creds for SANA QA"
-          id: "AWS_AKSAK_QA"
-          scope: GLOBAL
-          secretKey: "{AQAAABAAAAAw/Q3u/MqXygn9zq2qUCphdnN3snQtpUEODzKrYLZtPx/8THoHeyUNTLd4uDKjKvt8Q0xnX/KTfWSNeGhiQjwR7g==}"
-      - string:
-          description: "The DB Host Name of the QA DB of SANA"
-          id: "kibo-DB-Host-QA"
-          scope: GLOBAL
-          secret: "{AQAAABAAAABAfuivtkFmVNISZpi+brgE1gk9REQC+9S9gemoZMCK8OciB7CqCkzYJU11HE2yKAWnb/0JqZdQ+yjUfljCfY+fXjHtbHOkoxl8KKX9xJFJpyY=}"
-      - string:
-          description: "QA DB UserName of kibo"
-          id: "kibo-DB-Username-QA"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQ8dA5hIHnFBh/FW85CGum+UsAm0zy6gPmMXC6i7Zzuzw=}"
-      - string:
-          description: "QA DB Password of Kibo"
-          id: "kibo-DB-Password-QA"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQdLZHgjV9RMLgo1/oRcx36zSYQgv/V8OvZWRdkPL9cnU=}"
-      - string:
-          description: "QA DB Name of kibo"
-          id: "kibo-DB-Name-QA"
-          scope: GLOBAL
-          secret: "{AQAAABAAAAAQzYKafvv36Lt0WOaotOnHzicwnWPbyYZ5Uurkb8KOzqc=}"
 jenkins:
   agentProtocols:
   - "JNLP4-connect"
   - "Ping"
-  clouds:
-  - amazonEC2:
-      cloudName: "Jenkins-Slaves"
-      credentialsId: "AWS_AKSAK_DEV"
-      instanceCapStr: "5"
-      noDelayProvisioning: true
-      privateKey: |-
-        -----BEGIN RSA PRIVATE KEY-----
-        MIIEpAIBAAKCAQEAjLrDaDLm/ibZuLYPIgJpWcczTF+08RjKhvo1Y0cyMasBDADosbzEG4s5umpx
-        u955U8fFnnEZAB8xVWJ24YitO9oBYCDGR7XIVZxZw8ESxTYkkCRveZ+3j1d1/9wGd51athQggyYc
-        mu2gHK7fE1xLKtgKs+3NyHYffvR+7vfV/bIFkI1ZYDvNn32UQ4/IdXOYJkyu2kg8oQVesUheoxI4
-        NG0lzvBPI+mt5c/c/DS0wfuZcHd7PJMmrkK4iPDdf/FvvReIrnmHxllEKwaEPs5UP6gLvyrsyM79
-        Rac2BS2eM6CXEFWpuc7QPA0Mx4hc0mbHtU+DX9Cx2msbgg6/c451awIDAQABAoIBAHb9bz3KVF+u
-        j8bLQS5bZaKAeNJp1f9JG+1W4A9KYpl2YpM4rYei+Rnk9XG2kOXtrR52upRGQoJE3Zy5fZUi0H7b
-        zO/vpld5z6L7aTbIKEvRhMbP1+W5cyZjKCWnb1xyEwIDMJ5TejpRE2FNRtcC4ZefRiVuu+F0Zxsc
-        NbtumGRBeSvnAy8QZDUBln2zNrbyg8KsnEVbmbOtZvgLilt7zShi9nlYzBlanehr9W2VDWySO63d
-        kRgqo8rTYiVbI4l3aSaGgREGZFtiEgqAPUeNP8vBw1gq+COjHyOWWnuGpcXXA04DvnE2a0VJXfB0
-        BKI6BlJPcDykS6qfCP/pDE3bQTECgYEA70pUjhijnYXK+XfDUkoHGPSo9IUcx1wQQuprpWGXuUvB
-        ExwIrQhjI+qCUun9zatKMl8GpoddwhwLalN1UrwCF8kChKtu1hiRU/5EYtb4v46VvLsSjW/Oh20a
-        UhCmHaDarZ2PlN2OjFtSDG7kkGMguHs8aEx17HjKvj7QdKyKljkCgYEAlo6DMkiZVRXJHWvQNgSA
-        H5NuUWbvBoaKWZRDYSxro9NEj6x5BJtTbacL7cnIO+pgVQ4LRKhK7Rqr/6BbY2t+IGZlufZgaxan
-        g5sJnn+VIKxaIOHoJiROeORIUn648Bu04eiaWQuEdOL6Nro2G+Ugs2fbxp6i2AzyJGDvVnmuSMMC
-        gYBVZvPymvyaFcwxaPr+/Yi28WrziiaRSFxNZZjxt3kNGupXxaObDelEQkgtC3IX21Bp1dxrxthB
-        lPzF/+9Zjdw5XPZXH1A5fR8xGQiTNiIlS+BJMYMXk5XkY54HOAXxgR1K5Xb/LGvZ0CXiZhmRJq/g
-        56rRlqhns1y4tXZ0jbgQkQKBgQCGY3FiegE8PLUHaQwym3POO6h2St5DQebOrRQz8hWm51dEs9xW
-        K1ud/kUcnUf5i20vntiaEWrIGE29YOMSbInp290j0HMiQ9eFFufQLevsfUv6HAw/t5rAOG0CDhGA
-        agrct+bGYwx51X0pSrAv2CeHXMaFlWagWXXu2QPqebUDRwKBgQDCF5/eI57we86cJr73TQMsn/os
-        jY8GsR/NfIdgVAcUEICajEdZdHLFNwNNbGHNpk1WDFDFul9ja5VNldAIuP3WAWzeA5SylxaZq+II
-        UnFhslDrOyKcHNmQ0dJ0lZDMGAWuzFXRi3qX4iWAwol4X7MOkQWx4SQiTd+v/ToW3kj5tg==
-        -----END RSA PRIVATE KEY-----
-      region: "us-east-1"
-      templates:
-      - ami: "ami-073cbaa789d42ac8c"
-        amiType:
-          unixData:
-            sshPort: "22"
-        associatePublicIp: false
-        connectBySSHProcess: false
-        connectionStrategy: PRIVATE_IP
-        deleteRootOnTermination: false
-        description: "jenkins-Slave AMI"
-        ebsOptimized: false
-        idleTerminationMinutes: "5"
-        instanceCapStr: "5"
-        labelString: "Jenkins-EC2-Slave"
-        launchTimeoutStr: "240"
-        maxTotalUses: 8
-        minimumNumberOfInstances: 0
-        mode: NORMAL
-        monitoring: false
-        numExecutors: 1
-        remoteAdmin: "jenkins"
-        remoteFS: "/home/jenkins"
-        securityGroups: "sg-00aae9ed1edd7467b"
-        stopOnTerminate: false
-        subnetId: "subnet-068d53f3b042f7ece"
-        t2Unlimited: false
-        tags:
-        - name: "Name"
-          value: "Jenkins-EC2-Slaves"
-        type: T2Medium
-        useDedicatedTenancy: false
-        useEphemeralDevices: false
-        zone: "us-east-1a"
-      useInstanceProfileForCredentials: false
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
-  labelString: "master"
   markupFormatter: "plainText"
   mode: NORMAL
   myViewsTabBar: "standard"
-  nodes:
-  - permanent:
-      labelString: "mac-slave docker ios"
-      launcher:
-        ssh:
-          credentialsId: "0001"
-          host: "106.51.78.241"
-          port: 2000
-          sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
-      name: "mac-slave"
-      nodeDescription: "mac slave for ios builds"
-      nodeProperties:
-      - envVars:
-          env:
-          - key: "PATH"
-            value: "$PATH:/usr/local/bin:/Users/jenkins_kibo/Library/Python/2.7/bin"
-      remoteFS: "/Users/jenkins_kibo/Home"
-      retentionStrategy: "always"
   numExecutors: 2
   primaryView:
     all:
@@ -199,9 +22,11 @@ jenkins:
     enabled: true
   scmCheckoutRetryCount: 0
   securityRealm:
-    googleOAuth2:
-      clientId: "153406405661-glajicp7u7o1r47l97ov7ncefrcm3e76.apps.googleusercontent.com"
-      clientSecret: "{AQAAABAAAAAgyes4s6ycjblv0LLv7yzjvMOzk/H7/jfXWH508Kx+fyXnPJf4oqORp2VUA83XjuZu}"
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "balamani"
   slaveAgentPort: -1
   updateCenter:
     sites:
@@ -218,66 +43,44 @@ security:
     usageStatisticsEnabled: true
   downloadSettings:
     useBrowser: false
-  envInject:
-    enableLoadingFromMaster: false
-    enablePermissions: false
-    hideInjectedVars: false
-  globalJobDslSecurityConfiguration:
-    useScriptSecurity: true
   sSHD:
     port: -1
 unclassified:
-  artifactManager:
-    artifactManagerFactories:
-    - "compressing"
   buildStepOperation:
     enabled: false
   extendedEmailPublisher:
     adminRequiredForTemplateTesting: false
-    allowUnregisteredEnabled: true
+    allowUnregisteredEnabled: false
     charset: "UTF-8"
     debugMode: false
-    defaultBody: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:\r\n\r\nCheck\
-      \ console output at $BUILD_URL to view the results."
-    defaultContentType: "text/plain"
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
     defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
     maxAttachmentSize: -1
     maxAttachmentSizeMb: 0
     precedenceBulk: false
-    smtpPassword: "{AQAAABAAAAAwefabBhLA7hKORLPXwb/kJH4b0d8CtDB0Ulp2q1rI1qkzU4EFlTrC4HOl+6N+EOOTICrbtRQlFGIxQdfhyAagBg==}"
-    smtpServer: "email-smtp.us-east-1.amazonaws.com"
-    smtpUsername: "AKIA2M3SA74CLBNSCIO7"
     useSsl: false
     watchingEnabled: false
   gitHubPluginConfig:
-    hookUrl: "https://jenkins.nonprod.sana-rx.com/github-webhook/"
+    hookUrl: "http://localhost:8080/github-webhook/"
   gitSCM:
     createAccountBasedOnEmail: false
-  globalDefaultFlowDurabilityLevel:
-    durabilityHint: PERFORMANCE_OPTIMIZED
   location:
-    adminAddress: "bks@amalgamrx.com"
-    url: "https://jenkins.nonprod.sana-rx.com/"
+    adminAddress: "address not configured yet <nobody@nowhere>"
+    url: "http://localhost:8080/"
   mailer:
-    authentication:
-      password: "{AQAAABAAAAAwkMBzQtgP8D+u/nHhn4OBc1kqDZHHKwTAcnpN59fX4atMfykewku7FRL+6PZ+uNb7rzjc3+1x8Zol1pws+JKobQ==}"
-      username: "AKIA6K3O6F4LLNYQVJ56"
     charset: "UTF-8"
-    replyToAddress: "bks@amalgamrx.com"
-    smtpHost: "email-smtp.us-east-1.amazonaws.com"
     useSsl: false
-  mavenModuleSet:
-    localRepository: "default"
   pollSCM:
     pollingThreadCount: 10
   timestamperConfig:
-    allPipelines: true
+    allPipelines: false
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
     systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
-  upstream:
-    globalUpstreamFilterStrategy: UseOldest
 tool:
   git:
     installations:
-    - home: "git"
+    - home: "git.exe"
       name: "Default"
